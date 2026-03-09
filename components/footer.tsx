@@ -21,19 +21,25 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Essor Labs &mdash; Independent mobile
           developer
         </p>
-        <div className="flex items-center gap-4 text-sm text-zinc-400">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-zinc-400 sm:justify-end">
+          <Link href="/about" className="transition-colors hover:text-violet-600">
+            About
+          </Link>
+          <Link href="/contact" className="transition-colors hover:text-violet-600">
+            Contact
+          </Link>
           <Link
             href="/timelapse/privacy-policy"
             className="transition-colors hover:text-violet-600"
           >
             Privacy policy
           </Link>
-          <span aria-hidden>·</span>
-          <span className="flex items-center gap-1">
-            Built with
-            <span className="mx-1 text-base">🤍</span>
-            in Next.js
-          </span>
+          <Link
+            href="/timelapse/terms-of-service"
+            className="transition-colors hover:text-violet-600"
+          >
+            Terms
+          </Link>
         </div>
       </div>
     </motion.footer>
