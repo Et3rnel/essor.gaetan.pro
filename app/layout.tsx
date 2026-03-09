@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Essor Labs — Independent mobile developer",
   description:
     "Independent mobile developer building simple, useful, and well-crafted apps.",
+  verification: {
+    google: "PzBTw4IxHwjuskgivCnARdc90k8d0Il9Fr2E7PihGq4",
+  },
 };
 
 export default function RootLayout({
